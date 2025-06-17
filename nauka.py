@@ -1,0 +1,18 @@
+import numpy as np
+
+a = np.array([1, 2, 3])
+print("a:", a)
+print("typ a:", type(a))
+b = np.array([1, 2, 3.0])
+print("b:", b)
+c = np.array([[1, 2], [3, 4]])
+print("c:", c)
+d = np.array([1, 2, 3], ndmin=2)
+print("d:", d)
+e = np.array([1, 2, 3], dtype=complex)
+print("e:", e)
+f = np.array(np.asmatrix('1 2; 3 4'))
+print("f:", f)
+g = np.array(np.asmatrix('1 2; 3 4'), subok=True)
+print("g:", g)
+print(type(g))
